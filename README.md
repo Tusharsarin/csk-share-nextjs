@@ -62,4 +62,4 @@ Ensure you have the following installed:
    
    Google Sheet Link: [https://docs.google.com/spreadsheets/d/1bV69QAjClQ5uSgR_Avi-Mghj2r2HXd5QLwMEQpYfjFA/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1bV69QAjClQ5uSgR_Avi-Mghj2r2HXd5QLwMEQpYfjFA/edit?gid=0#gid=0).
 
-   Sample Excel File: [https://github.com/lakshyakalia/csk-share-replica-nextjs/blob/main/public/assets/csk_initial_data.xlsx](https://github.com/lakshyakalia/csk-share-replica-nextjs/blob/main/public/assets/csk_initial_data.xlsx).
+   Sample Excel File: [https://github.com/Tusharsarin/csk-share-nextjs/blob/main/public/assets/csk_initial_data.xlsx](https://github.com/Tusharsarin/csk-share-nextjs/blob/main/public/assets/csk_initial_data.xlsx).
