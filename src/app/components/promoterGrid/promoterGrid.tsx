@@ -28,7 +28,7 @@ export default function PromoterGrid({ data }: PromoterProps) {
                   <td className="py-2 px-4">{item.Designation}</td>
                   <td className="py-2 px-4">{item.Experience}</td>
                   <td className="py-2 px-4">
-                    <a href={item?.["Linkedin Profile"]} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <a href={item?.Linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center">
                       <FaLinkedin className="mr-2 text-blue-500" />
                     </a>
                   </td>

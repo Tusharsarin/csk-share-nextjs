@@ -30,7 +30,7 @@ export interface Promoter_Or_Management {
   Name: string;
   Designation: string;
   Experience: string;
-  LinkedinProfile: string;
+  Linkedin: string;
 }
 
 export interface FinancialData {
