@@ -1,0 +1,19 @@
+.grid-table tr {
+  border: 1px solid #0000001a;
+  border-radius: 10px !important;
+}
+.grid-table tr:nth-child(1) {
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}
+.grid-table th {
+  color: #757575;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.grid-table td {
+  color: #181818;
+  font-size: 1rem;
+  font-weight: 500;
+}

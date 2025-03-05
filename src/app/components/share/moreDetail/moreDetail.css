@@ -1,0 +1,28 @@
+.text-base > p {
+  color: #757575;
+  line-height: 24px;
+  font-weight: 400;
+}
+.more-detail-container {
+  width: 100%;
+}
+.grid-table {
+  width: -webkit-fill-available;
+}
+.more-detail-container h3,
+.more-detail-container li {
+  color: #757575;
+}
+ol > li {
+  margin-left: 40px;
+  margin-bottom: 8px;
+}
+.ol-num {
+  list-style: auto;
+}
+.ol-disc {
+  list-style: disc;
+}
+.no-left-margin > li {
+  margin-left: 20px;
+}

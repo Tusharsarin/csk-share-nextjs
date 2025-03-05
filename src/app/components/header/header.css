@@ -1,0 +1,67 @@
+.main-navbar {
+  /* z-index: 999999; */
+  /* z-index: 100; */
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background-color: #f9fbf980;
+  border: 1px solid #000;
+  border-bottom: 1px #0000001a;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 10%;
+  position: sticky;
+  top: 0;
+}
+.logo-img {
+  width: 16rem;
+}
+.unclickable-links a {
+  margin-right: 20px;
+  color: #757575;
+  font-weight: 500;
+}
+.links-container {
+  align-content: center;
+}
+/* Add this to header.css */
+.links-container {
+  display: flex;
+}
+
+.hamburger-icon {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .links-container .unclickable-links {
+    display: none; /* Hide links */
+  }
+  .hamburger-icon {
+    display: block; /* Show hamburger icon */
+  }
+  .drawer {
+    display: block; /* Style for the drawer */
+    /* Add additional styles for the drawer */
+  }
+}
+
+.drawer {
+  position: fixed; /* Position it fixed to the side */
+  /* top: 0; */
+  right: 0; /* Align to the right */
+  width: 100%; /* Width of the drawer */
+  /* height: 100%; Full height */
+  background-color: #f9fbf9f5; /* Background color */
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  /* box-shadow: -2px 0 1px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  padding: 20px; /* Padding inside the drawer */
+  z-index: 1000; /* Ensure it appears above other content */
+  transition: transform 0.3s ease; /* Smooth transition */
+  transform: translateX(100%); /* Start off-screen */
+}
+
+.drawer.open {
+  transform: translateX(0); /* Slide in when open */
+}

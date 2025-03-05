@@ -1,0 +1,11 @@
+.no-pad {
+  padding: 0 !important;
+  margin-top: 20px;
+  width: -webkit-fill-available;
+}
+.finance-menu {
+  padding-right: 0 !important;
+}
+.tabs-content {
+  margin-left: 0 !important;
+}

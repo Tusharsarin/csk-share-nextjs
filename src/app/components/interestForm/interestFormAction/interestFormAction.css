@@ -1,0 +1,110 @@
+.form-action-container {
+  padding: 1.5rem;
+}
+.form-action-container > div,
+.form-action-container > form > div {
+  margin-bottom: 1rem;
+}
+.h5 {
+  color: #181818;
+  letter-spacing: -0.1px;
+  /* font-family: "Inter 28 Pt", Arial, sans-serif; */
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+}
+.sec-text {
+  color: #757575;
+}
+input,
+textarea {
+  color: #757575;
+  border: 1px solid #0000001a;
+  border-radius: 8px;
+  min-height: 3rem;
+  margin-bottom: 0;
+  /* font-family: "Inter 28 Pt", Arial, sans-serif; */
+  font-size: 1rem;
+  vertical-align: middle;
+  background-color: #fff;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  outline: none;
+}
+input:focus,
+textarea:focus {
+  outline: 1px solid #34c759;
+  transition: 200ms;
+}
+
+input::placeholder {
+  font-weight: 400;
+}
+
+textarea {
+  min-height: 7rem;
+}
+.buy-btn {
+  color: white;
+  text-align: center;
+  letter-spacing: -0.02em;
+  background-color: #34c759;
+  border: 2px solid #34c759;
+  border-radius: 99px;
+  width: 100%;
+  min-height: auto;
+  padding: 10px 2rem;
+  /* font-family: "Inter 28 Pt", Arial, sans-serif; */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.6, 0.6, 0, 1);
+}
+
+.connect-btn {
+  color: #181818;
+  text-align: center;
+  letter-spacing: -0.02em;
+  /* background-color: #34c759; */
+  /* border: 2px solid #34c759; */
+  border: 1px solid #0000001a;
+  text-align: center;
+  border-radius: 99px;
+  width: 100%;
+  min-height: auto;
+  padding: 10px 2rem;
+  /* font-family: "Inter 28 Pt", Arial, sans-serif; */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.6, 0.6, 0, 1);
+}
+.connect-btn:hover {
+  color: var(--shade);
+  background-color: #075e54;
+  border-style: solid;
+  border-color: #075e54;
+  transform: none;
+}
+.whatsapp-img {
+  width: 28px;
+}
+
+.tab {
+  /* padding: 10px 20px; */
+  cursor: pointer;
+  /* border-radius: 5px; */
+  /* background-color: #f0f0f0; Default background */
+  /* transition: background-color 0.3s ease; */
+  color: black;
+}
+
+.active-tab {
+  /* background-color: green; Green for active tab */
+  color: #34c759 !important;
+  border-bottom: 1px solid #34c759;
+  /* color: white; */
+}

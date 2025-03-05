@@ -1,0 +1,13 @@
+.col-gap-1 {
+  grid-column-gap: 1rem;
+}
+.rounded-cus {
+  border-radius: 5px;
+  width: 100px;
+}
+.grey {
+  color: #757575;
+}
+.red {
+  color: #980003;
+}

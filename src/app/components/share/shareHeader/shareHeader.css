@@ -1,0 +1,10 @@
+.background-shade {
+  background-color: var(--shade);
+  letter-spacing: -1px;
+}
+h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}

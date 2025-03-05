@@ -1,0 +1,24 @@
+.tabs-menu {
+  border-bottom: 1px solid #1818181a;
+  padding-top: 0.5rem;
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+.tabs-container {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #c8c8c800;
+}
+.tabs-container > div {
+  vertical-align: top;
+  text-align: left;
+  cursor: pointer;
+  /* color: #222; */
+  /* background-color: #ddd; */
+  color: #757575;
+  padding: 9px 30px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
