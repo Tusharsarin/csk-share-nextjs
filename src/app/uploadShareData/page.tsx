@@ -2,8 +2,10 @@
 import { useState } from "react";
 import "./uploadShareData.css";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 export default function Home() {
   const [file, setFile] = useState<File | null>(null);
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,8 +16,8 @@ export default function Home() {
 
   const handleUpload = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!file) return alert("Please select a file to upload");
-
+    if (!file) return toast.warning("Please select a file to upload");
+    setLoading(true);
     const formData = new FormData();
     formData.append("file", file);
 
@@ -25,10 +27,11 @@ export default function Home() {
     });
 
     if (response.ok) {
-      alert("File uploaded successfully");
+      setLoading(false);
+      toast.success("File uploaded successfully");
       router.push("/chennai-super-kings-csk-unlisted-shares");
     } else {
-      alert("Failed to upload file");
+      toast.error("Failed to upload file");
     }
   };
 
@@ -42,8 +45,8 @@ export default function Home() {
           accept=".xlsx"
           onChange={handleFileChange}
         />
-        <button className="upload-btn" type="submit">
-          Upload
+        <button className="upload-btn" type="submit" disabled={loading}>
+          {loading ? "Loading..." : "Upload"}
         </button>
       </form>
     </div>

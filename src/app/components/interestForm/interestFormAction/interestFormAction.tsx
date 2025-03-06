@@ -1,4 +1,5 @@
 "use client";
+import { toast } from "sonner";
 import "./interestFormAction.css";
 import { FormEvent, useState } from "react";
 
@@ -10,6 +11,7 @@ export default function InterestFormAction() {
   const [quantity, setQuantity] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [loading, setLoading] = useState(false);
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
@@ -67,6 +69,7 @@ export default function InterestFormAction() {
     };
 
     try {
+      setLoading(true);
       const response = await fetch("/api/interestForm", {
         method: "POST",
         headers: {
@@ -78,7 +81,8 @@ export default function InterestFormAction() {
 
       const content = await response.json();
       console.log(content);
-      alert(content.data.tableRange);
+      setLoading(false);
+      toast.success("Record has been created.");
 
       setName("");
       setEmail("");
@@ -88,7 +92,7 @@ export default function InterestFormAction() {
       setErrors({});
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("There was an issue submitting the form. Please try again.");
+      toast.error("There was an issue submitting the form. Please try again.");
     }
   };
 
@@ -176,8 +180,8 @@ export default function InterestFormAction() {
           </div>
 
           <div>
-            <button type="submit" className="buy-btn">
-              {activeTab === "buy" ? "Buy" : "Sell"}
+            <button type="submit" className="buy-btn" disabled={loading}>
+              {loading ? 'Loading...' : activeTab === "buy" ? "Buy" : "Sell"}
             </button>
           </div>
 
